@@ -10,9 +10,7 @@ FILENAME = "%s/.timertime" % HOME
 
 def starttimer():
     if (checkifexists()):
-        print("Timer is already going! Overwrite previous timer? [y/n]")
-        
-        response = input(" > ")
+        response = input("Timer is already going! Overwrite previous timer? [y/n]  ")
         
         if (not (response == "y" or response == "Y" or response == "yes")):
             print("Aborting")
