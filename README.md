@@ -1,5 +1,5 @@
 # Timer
-Command line utility for taking time. Stores timestamps as a file in home, so that no program is running in the background.
+Command line utility for taking time. Stores timestamps as a file in the user's home directory, so that no program is running in the background.
 
 
 ### Requirements and installation
