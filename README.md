@@ -16,4 +16,19 @@ Now, timer should be installed. Try writing
  $ timer start
  $ timer stop
 ```
-for confimation. Additional commands available are `timer pause`, `timer resume` and `timer show`, they do what you would expect them to do. 
+for confimation. 
+
+
+### Usage
+Once installed, the following commands are available:
+
+|    Command      |  Discription                                                  |
+|  :---------:    |  -------------------------------------------------------      |
+| `timer start`   |  Starts the timer                                             |
+| `timer stop`    |  Stops the timer and displays the time passed                 |
+| `timer pause`   |  Pauses the timer                                             |
+| `timer resume`  |  Resumes the timer after a `timer pause`.                     |
+| `timer show`    |  Shows the current time passed (without stopping the timer)   |
+| `timer status`  |  Shows the current state of Timer (stopped, going or paused)  |
+
+
