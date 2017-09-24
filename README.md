@@ -27,7 +27,7 @@ Once installed, the following commands are available:
 | `timer start`   |  Starts the timer                                             |
 | `timer stop`    |  Stops the timer and displays the time passed                 |
 | `timer pause`   |  Pauses the timer                                             |
-| `timer resume`  |  Resumes the timer after a `timer pause`.                     |
+| `timer resume`  |  Resumes the timer after a `timer pause`                      |
 | `timer show`    |  Shows the current time passed (without stopping the timer)   |
 | `timer status`  |  Shows the current state of Timer (stopped, going or paused)  |
 
