@@ -90,6 +90,18 @@ def showtimer():
     display()
 
 
+def statustimer():
+    if (not checkifexists()):
+        print("Timer inactive")
+
+    else:
+        if filelen() % 2 == 0:
+            print("Timer paused")
+
+        else:
+            print("Timer running")
+            
+
 def main():
     try:
         command = sys.argv[1]
@@ -105,6 +117,9 @@ def main():
 
         elif (command == "show"):
             showtimer()
+
+        elif (command == "status"):
+            statustimer()
             
         else:
             print("Unknown command '%s'" % command)
