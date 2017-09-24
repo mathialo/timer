@@ -16,4 +16,4 @@ Now, timer should be installed. Try writing
  $ timer start
  $ timer stop
 ```
-for confimation. Additional commands available are `timer pause` and `timer resume`, they do what you would expect them to do. 
+for confimation. Additional commands available are `timer pause`, `timer resume` and `timer show`, they do what you would expect them to do. 

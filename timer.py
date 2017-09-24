@@ -57,6 +57,12 @@ def stoptimer():
         print("Timer not started!")
         return
     
+    display()
+    
+    os.remove(FILENAME)
+
+
+def display():
     lines = []
     
     f = open(FILENAME, "r")
@@ -70,12 +76,18 @@ def stoptimer():
     starttimes = [lines[i] for i in range(0, len(lines), 2)]
     
     secnum = sum(stoptimes) - sum(starttimes)
-    
+
     m, s = divmod(secnum, 60)
     h, m = divmod(m, 60)
     print("%d:%02d:%02d" % (h, m, s))
+
+
+def showtimer():
+    if (not checkifexists()):
+        print("Timer not started!")
+        return
     
-    os.remove(FILENAME)
+    display()
 
 
 def main():
@@ -90,6 +102,9 @@ def main():
             
         elif (command == "pause" or command == "resume"):
             pausetimer(command)
+
+        elif (command == "show"):
+            showtimer()
             
         else:
             print("Unknown command '%s'" % command)
