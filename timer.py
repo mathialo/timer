@@ -127,7 +127,7 @@ def main():
     except IndexError:
         print("No command given. Proper use:")
         print("\n  > timer [cmd]\n")
-        print("Where [cmd] is either start, stop, pause or resume")
+        print("Where [cmd] is either start, stop, pause, resume, status or show.")
     
 if __name__ == "__main__":
     main()
