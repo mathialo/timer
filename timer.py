@@ -38,6 +38,9 @@ def pausetimer(command):
     f.write(str(int(time.time())) + "\n")
     f.close()
 
+    if (command == "pause"):
+        print("Timer paused at %s" % display())
+
 
 def checkifexists():
     return os.path.isfile(FILENAME)
@@ -57,7 +60,7 @@ def stoptimer():
         print("Timer not started!")
         return
     
-    display()
+    print(display())
     
     os.remove(FILENAME)
 
@@ -79,7 +82,7 @@ def display():
 
     m, s = divmod(secnum, 60)
     h, m = divmod(m, 60)
-    print("%d:%02d:%02d" % (h, m, s))
+    return "%d:%02d:%02d" % (h, m, s)
 
 
 def showtimer():
@@ -87,7 +90,7 @@ def showtimer():
         print("Timer not started!")
         return
     
-    display()
+    print(display())
 
 
 def statustimer():
