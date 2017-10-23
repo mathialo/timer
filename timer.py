@@ -131,7 +131,7 @@ def main():
             statustimer()
             
         else:
-            print("Unknown command '%s'" % command)
+            print("Timer: Unknown command '%s'" % command)
         
     except IndexError:
         print("No command given. Proper use:")
