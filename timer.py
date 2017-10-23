@@ -82,7 +82,13 @@ def display():
 
     m, s = divmod(secnum, 60)
     h, m = divmod(m, 60)
-    return "%d:%02d:%02d" % (h, m, s)
+
+    if h > 23:
+        d, h = divmod(h, 24)
+        return "%d d, %d:%02d:%02d" % (d, h, m, s)
+
+    else:
+        return "%d:%02d:%02d" % (h, m, s)
 
 
 def showtimer():
