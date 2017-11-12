@@ -108,7 +108,7 @@ def statustimer():
             print("Timer paused")
 
         else:
-            print("Timer running")
+            print("Timer running at %s" % display())
             
 
 def main():
